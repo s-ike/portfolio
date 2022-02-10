@@ -28,6 +28,10 @@
   min-height: auto;
 }
 
+.portfolio-title {
+  font-size: 22px;
+}
+
 .portfolio-logo {
   background: url(images/logo.png) 50% no-repeat;
   background-size: cover;
