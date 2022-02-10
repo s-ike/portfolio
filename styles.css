@@ -172,6 +172,20 @@ img.article-image {
   line-height: 3;
 }
 
+.career-table {
+  border-collapse: collapse;
+  border: solid 1px #d1d1d1;
+}
+
+.career-table th, .career-table td {
+  border: solid 1px #d1d1d1;
+  padding: 12px 18px;
+}
+
+.career-table-period {
+  width: 120px;
+}
+
 footer {
   background-image: url(images/footer-background.png);
   background-size: cover;
