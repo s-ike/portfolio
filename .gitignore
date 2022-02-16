@@ -1,2 +1,5 @@
 images_org
 Tutorial
+vendor
+docs/*
+!docs/.gitkeep
