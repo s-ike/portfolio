@@ -2,3 +2,6 @@ destination: ./docs
 
 site_title: "s-ikeda portfolio website"
 github_url: "https://github.com/s-ike/"
+
+sass:
+  style: compressed
