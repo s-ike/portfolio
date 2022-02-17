@@ -1,126 +1,70 @@
-<!doctype html>
-<html lang="ja">
-
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-220438372-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-220438372-1');
-    </script>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A portfolio template that uses Material Design Lite.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>s-ikeda portfolio | BtoCマッチングサイト、システム</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-
-<body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-            <div class="mdl-layout__header-row portfolio-logo-row">
-                <span class="mdl-layout__title portfolio-title">
-                    s-ikeda portfolio website
-                </span>
+---
+layout: default
+title: s-ikeda portfolio | BtoCマッチングサイト、システム
+---
+<main class="mdl-layout__content">
+    <div class="mdl-grid portfolio-max-width">
+        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">BtoCマッチングサイト、システム</h2>
             </div>
-            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                    <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
-                    <a class="mdl-navigation__link" href="about.html">About</a>
-                </nav>
+            <div class="mdl-card__media">
+                <img class="article-image" src=" images/portfolio-matching-01.jpg" border="0" alt="">
             </div>
-        </header>
-        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
-                <a class="mdl-navigation__link" href="about.html">About</a>
-            </nav>
+            <div class="mdl-card__supporting-text">
+                <span>設計、フロントエンド開発、バックエンド開発</span>
+            </div>
+            <div class="mdl-grid portfolio-copy">
+                <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">概要</h3>
+                <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding">
+                    <p>
+                        家を建てたいユーザーと建築会社をマッチングさせるためのシステムです。<br>
+                        ユーザーがフォームから申し込みを行い管理システムにデータが入ります。その内容を元に建築会社用フォームを生成します。建築会社からの回答を集め、ユーザー用フォームを生成します。ユーザーがマッチング希望会社を選択しマッチング完了です。
+                    </p>
+                </div>
+
+                <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">管理システム</h3>
+                <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding">
+                    <p>
+                        ユーザーからの申込み内容を確認、マッチングの進行の確認等を行う機能を既存システムへ追加。<br>
+                        <br>
+                        PHP, mySQL, html
+                    </p>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <img class="article-image" src=" images/portfolio-matching-02.jpg" border="0" alt="">
+                </div>
+
+                <!-- <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Initial Ideas</h3>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <img class="article-image" src=" images/portfolio-example-03.jpg" border="0" alt="">
+                </div>
+                <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
+                    <p>
+                        Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
+                    </p>
+                </div> -->
+
+                <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">マッチングフォーム</h3>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <img class="article-image" src=" images/portfolio-matching-03.jpg" border="0" alt="">
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                    <img class="article-image" src=" images/portfolio-matching-04.jpg" border="0" alt="">
+                </div>
+                <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
+                    <p>
+                        建築会社がユーザーの申込み内容を確認しマッチングの希望を回答するフォーム。<br>
+                        URL生成、メール、リマインドメール、フォーム生成、フォーム送信内容検証、回答管理、締め切りなどの機能を実装。<br>
+                        <br>
+                        ユーザーが建築会社を選択してマッチングを完了させるフォーム。<br>
+                        URL生成、メール、リマインドメール、フォーム生成、フォーム送信内容検証、回答管理などの機能を実装。<br>
+                        <br>
+                        PHP, mySQL, html, css(bootstrap), javascript
+                    </p>
+                </div>
+            </div>
         </div>
-        <main class="mdl-layout__content">
-            <div class="mdl-grid portfolio-max-width">
-                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">BtoCマッチングサイト、システム</h2>
-                    </div>
-                    <div class="mdl-card__media">
-                        <img class="article-image" src=" images/portfolio-matching-01.jpg" border="0" alt="">
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <span>設計、フロントエンド開発、バックエンド開発</span>
-                    </div>
-                    <div class="mdl-grid portfolio-copy">
-                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">概要</h3>
-                        <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text no-padding">
-                            <p>
-                                家を建てたいユーザーと建築会社をマッチングさせるためのシステムです。<br>
-                                ユーザーがフォームから申し込みを行い管理システムにデータが入ります。その内容を元に建築会社用フォームを生成します。建築会社からの回答を集め、ユーザー用フォームを生成します。ユーザーがマッチング希望会社を選択しマッチング完了です。
-                            </p>
-                        </div>
-
-                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">管理システム</h3>
-                        <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding">
-                            <p>
-                                ユーザーからの申込み内容を確認、マッチングの進行の確認等を行う機能を既存システムへ追加。<br>
-                                <br>
-                                PHP, mySQL, html
-                            </p>
-                        </div>
-                        <div class="mdl-cell mdl-cell--6-col">
-                            <img class="article-image" src=" images/portfolio-matching-02.jpg" border="0" alt="">
-                        </div>
-
-                        <!-- <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Initial Ideas</h3>
-                        <div class="mdl-cell mdl-cell--6-col">
-                            <img class="article-image" src=" images/portfolio-example-03.jpg" border="0" alt="">
-                        </div>
-                        <div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding ">
-                            <p>
-                                Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet. Voluptate voluptate irure occaecat deserunt incididunt esse in. Sunt velit aliquip sunt elit ex nulla reprehenderit qui ut eiusmod ipsum do. Duis veniam reprehenderit laborum occaecat id proident nulla veniam. Duis enim deserunt voluptate aute veniam sint pariatur exercitation. Irure mollit est sit labore est deserunt pariatur duis aute laboris cupidatat. Consectetur consequat esse est sit veniam adipisicing ipsum enim irure.
-                            </p>
-                        </div> -->
-
-                        <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">マッチングフォーム</h3>
-                        <div class="mdl-cell mdl-cell--6-col">
-                            <img class="article-image" src=" images/portfolio-matching-03.jpg" border="0" alt="">
-                        </div>
-                        <div class="mdl-cell mdl-cell--6-col">
-                            <img class="article-image" src=" images/portfolio-matching-04.jpg" border="0" alt="">
-                        </div>
-                        <div class="mdl-cell mdl-cell--8-col mdl-card__supporting-text no-padding ">
-                            <p>
-                                建築会社がユーザーの申込み内容を確認しマッチングの希望を回答するフォーム。<br>
-                                URL生成、メール、リマインドメール、フォーム生成、フォーム送信内容検証、回答管理、締め切りなどの機能を実装。<br>
-                                <br>
-                                ユーザーが建築会社を選択してマッチングを完了させるフォーム。<br>
-                                URL生成、メール、リマインドメール、フォーム生成、フォーム送信内容検証、回答管理などの機能を実装。<br>
-                                <br>
-                                PHP, mySQL, html, css(bootstrap), javascript
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <footer class="mdl-mini-footer">
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">s-ikeda portfolio website</div>
-                </div>
-                <div class="mdl-mini-footer__right-section">
-                    <ul class="mdl-mini-footer__link-list">
-                        <li><a href="https://github.com/s-ike/">Github</a></li>
-                    </ul>
-                </div>
-            </footer>
-        </main>
     </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-</body>
-
-</html>
+    {% include footer.html %}
+</main>
