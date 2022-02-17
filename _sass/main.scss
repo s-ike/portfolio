@@ -3,6 +3,14 @@ $nav_color: rgba(0, 0, 0, 0.08);
 $nav_button_color: rgba(197, 197, 197, 0.44);
 $table_border_color: #d1d1d1;
 
+body {
+  font-family: "Helvetica", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Roboto", "Helvetica", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+}
+
 .portfolio-header {
   position: relative;
   background-image: url(/assets/images/header-bg.jpg);
