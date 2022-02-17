@@ -7,10 +7,14 @@ title: s-ikeda portfolio
         {% for item in site.data.portfolio %}
         <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
             <div class="mdl-card__media">
-                <img class="article-image"
-                 src="/assets/images/{{ item.img }}"
-                 decoding="async"
-                 alt="{{ item.name }}">
+                <picture>
+                    <source type="image/webp"
+                            srcset="/assets/images/{{ item.img }}.webp">
+                    <img class="article-image"
+                         src="/assets/images/{{ item.img }}"
+                         decoding="async"
+                         alt="{{ item.name }}">
+                </picture>
             </div>
             <div class="mdl-card__title">
                 <h2 class="mdl-card__title-text">{{ item.name }}</h2>
