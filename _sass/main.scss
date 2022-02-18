@@ -1,3 +1,4 @@
+$text_color: rgba(0,0,0,.87);
 $nav_active_color: rgb(255,64,129);
 $nav_color: rgba(0, 0, 0, 0.08);
 $nav_button_color: rgba(197, 197, 197, 0.44);
@@ -5,6 +6,7 @@ $table_border_color: #d1d1d1;
 
 body {
   font-family: "Helvetica", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  color: $text_color;
 }
 
 h1, h2 {
@@ -98,6 +100,10 @@ h1, h2 {
   padding-bottom: 0;
 }
 
+.portfolio-card-body {
+  color: $text_color;
+}
+
 .portfolio-blog-card-compact .mdl-card__title {
   padding-bottom: 0;
 }
@@ -158,6 +164,10 @@ img.article-image {
   margin: auto;
 }
 
+.text-content {
+  color: $text_color;
+}
+
 .about-myname {
   font-size: 18px;
   line-height: 3;
@@ -166,6 +176,7 @@ img.article-image {
 .career-table {
   border-collapse: collapse;
   border: solid 1px $table_border_color;
+  color: $text_color;
 }
 
 .career-table th, .career-table td {
