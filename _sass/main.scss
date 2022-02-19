@@ -1,5 +1,5 @@
-$text_color: rgba(0,0,0,.87);
-$nav_active_color: rgb(255,64,129);
+$text_color: rgba(0, 0, 0, .87);
+$nav_active_color: rgb(255, 64, 129);
 $nav_color: rgba(0, 0, 0, 0.08);
 $nav_button_color: rgba(197, 197, 197, 0.44);
 $table_border_color: #d1d1d1;
@@ -98,6 +98,10 @@ h1, h2 {
 
 .portfolio-card .mdl-card__title {
   padding-bottom: 0;
+}
+
+.portfolio-card-title {
+  border-top: 1px solid rgba(0, 0, 0, .1)
 }
 
 .portfolio-card-body {
