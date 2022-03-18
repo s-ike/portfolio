@@ -4,3 +4,4 @@ vendor
 docs/*
 !docs/.gitkeep
 .jekyll-cache
+node_modules/
