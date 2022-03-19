@@ -18,10 +18,12 @@ title: s-ikeda portfolio
       <div class="xl:w-1/4 md:w-1/2 p-4">
         <div class="bg-gray-100 p-6 rounded-lg">
           <picture class="h-40 rounded w-full object-cover object-center mb-6">
+            {% capture img %}/assets/images/{{ item.img }}.webp{% endcapture %}
             <source type="image/webp"
-              srcset="/assets/images/{{ item.img }}.webp">
+              srcset="{{ img | relative_url}}">
+            {% capture img %}/assets/images/{{ item.img }}{% endcapture %}
             <img class="article-image"
-              src="/assets/images/{{ item.img }}"
+              src="{{ img | relative_url}}"
               decoding="async"
               alt="{{ item.name }}">
           </picture>
