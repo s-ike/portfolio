@@ -2,36 +2,44 @@
 layout: default
 title: s-ikeda portfolio
 ---
-<main class="mdl-layout__content">
-    <div class="text-center text-red-500 text-2xl">Hello World</div>
-    <div class="mdl-grid portfolio-max-width">
-        {% for item in site.data.portfolio %}
-        <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-            <div class="mdl-card__media">
-                <picture>
-                    <source type="image/webp"
-                            srcset="/assets/images/{{ item.img }}.webp">
-                    <img class="article-image"
-                         src="/assets/images/{{ item.img }}"
-                         decoding="async"
-                         alt="{{ item.name }}">
-                </picture>
-            </div>
-            <div class="mdl-card__title portfolio-card-title">
-                <h2 class="mdl-card__title-text">{{ item.name }}</h2>
-            </div>
-            <div class="mdl-card__supporting-text mdl-card--expand portfolio-card-body">
-                {{ item.desc1 }}<br>
-                {{ item.desc2 }}<br>
-                {{ item.desc3 }}<br>
-                {{ item.desc4 }}
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-button--accent"
-                 href="{{ item.link }}">{{ item.link_str }}</a>
-            </div>
-        </div>
-        {% endfor %}
+<main class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap w-full mb-20">
+      <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Portfolio</h1>
+        <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+      </div>
+      <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
+        作成したものをいくつかピックアップして載せています。
+      </p>
     </div>
-    {% include footer.html %}
+    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+      {% for item in site.data.portfolio %}
+      <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <picture class="h-40 rounded w-full object-cover object-center mb-6">
+            <source type="image/webp"
+              srcset="/assets/images/{{ item.img }}.webp">
+            <img class="article-image"
+              src="/assets/images/{{ item.img }}"
+              decoding="async"
+              alt="{{ item.name }}">
+          </picture>
+          <h2 class="text-xl text-gray-900 font-medium title-font my-4">{{ item.name }}</h2>
+          <p class="leading-relaxed text-base">
+            {{ item.desc1 }}<br>
+            {{ item.desc2 }}<br>
+            {{ item.desc3 }}<br>
+            {{ item.desc4 }}
+          </p>
+          <a href="{{ item.link }}" class="text-indigo-500 inline-flex items-center mt-3">{{ item.link_str }}
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </main>
