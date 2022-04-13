@@ -5,7 +5,7 @@ module.exports = {
     './_posts/*.md',
     './*.html',
   ],
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
   },
