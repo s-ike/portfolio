@@ -19,33 +19,36 @@ description: about me
       <source type="image/webp" srcset="{{ webp | relative_url }}">
       <img src="{{ img | relative_url }}" alt="" decoding="async">
     </picture>
-    <div class="w-full items-center text-center">
+    <section class="w-full items-center text-center">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 dark:text-white">
         池田 俊太郎 | Shuntaro IKEDA
       </h1>
-      <p class="mb-8 leading-relaxed">
+      <p class="mb-8 leading-relaxed text-left">
         業務では主にwebアプリの開発をしています。<br>
         プライベートでは42Tokyoのカリキュラムを通してコンピュータサイエンスを学んでいます。<br>
         Adobe IllustratorやPhotoshop等を使えるのでビジュアルを活用したコミュニケーションも得意です。
       </p>
-    </div>
-    <div>
+    </section>
+    <section>
+      <h2>業務履歴</h2>
       <table class="table-fixed border-collapse border">
         <thead>
           <tr>
-            <th class="w-1/4 border-collapse border">期間</th>
-            <th class="w-3/4 border-collapse border">内容</th>
+            <th class="w-1/5 border-collapse border">期間</th>
+            <th class="w-2/5 border-collapse border">内容</th>
+            <th class="w-2/5 border-collapse border">技術</th>
           </tr>
         </thead>
         <tbody>
-          {% for item in site.data.career %}
+          {% for item in site.data.works %}
           <tr>
             <td class="border-collapse border px-4 py-2">{{ item.when }}</td>
             <td class="border-collapse border px-4 py-2">{{ item.desc }}</td>
+            <td class="border-collapse border px-4 py-2">{{ item.tech }}</td>
           </tr>
           {% endfor %}
         </tbody>
       </table>
-    </div>
+    </section>
   </div>
 </main>
